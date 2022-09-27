@@ -1,0 +1,159 @@
+/* Utilidades */
+
+:root{
+    --main-color: #464146;
+    --secondary-color: #4c514c;
+    --alt-color: #7a8a80;
+    --background-color: #f4f6f3;
+    --background-color: #f4f6f3;
+    --padding-general: 10px;
+}
+
+.uppercase{
+  text-transform: uppercase;
+
+}
+
+body{
+  font-family: 'Reem Kufi Fun', sans-serif;
+  padding: calc(var(--padding-general)/10)
+}
+
+.underline2{
+  width: 5%;
+  height: 2.5px;
+  background-color: var(--main-color);
+}
+
+/* Seccion header y barra de navegacion */
+
+header {
+  margin: 20px;
+  height: calc(100vh - 80px);
+  width: calc(100% - 80px);
+  background-image: url(https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: calc(var(--padding-general)*2);
+  background-position: right center;
+}
+
+nav {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0 10px;
+  margin-left: auto;
+}
+
+nav span {
+  color: var(--main-color);
+  justify-self: flex-start;
+  padding: calc(var(--padding-general)/2);
+}
+
+nav div{
+  padding: calc(var(--padding-general)/2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+  padding: calc(var(--padding-general)/2);
+}
+
+.subscribe {
+  border: solid 2px var(--secondary-color);
+  padding: 5px 10px;
+}
+
+.subscribe:hover{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header p {
+  color: var(--secondary-color);
+}
+
+.underline {
+  width: 10%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+h1{
+  color: var(--main-color);
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+/* La imagen se importa desde css cuando queremos que quede de fondo */
+
+
+/* Seccion acticulos */
+
+main{
+  padding: 120px;
+  background-color: var(--background-color);
+}
+
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container{
+  display: flex;
+}
+
+h2{
+  color: var(--main-color);
+}
+
+article {
+  width: 100%;
+  height: 500px;
+  margin: 100px 30px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.article-image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+img{
+  object-fit: cover
+}
+
+.article-image img {
+  width: 170%;
+  height: 100%;
+}
+
+.article-content {
+  height: 50%;
+  width: 100%;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
